@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th {
-            background-color: #4e9bd0;
-        }
-    </style>
+   <link rel="stylesheet" href="kalender.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Konsultationer</title>
 </head>
 
 <body>
-<table>
+<h1>Oversigt over konsultationer</h1>
+<div>
+<input type="week" id="week">
+    <form action="nyKonsultation.html">
+        <input type="submit" value="opret ny konsultation">
+    </form>
+</div>
+<div style="overflow-x: auto;">
+<table id="kalender">
 
     <tr>
         <td>Tid</td>
@@ -93,5 +93,6 @@
 
 
 </table>
+</div>
 </body>
 </html>
