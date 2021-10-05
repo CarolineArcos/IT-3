@@ -1,34 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <style>
-        body{
-            background-color: #99a2b0;
-        }
-        h1{
-            text-align: center;
-        }
-        div{
-
-        }
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            width: 700px;
-            padding: 10px;
-        }
-        th {
-            background-color: #4e9bd0;
-            font-size: 20px;
-        }
-        table{
-
-            background-color: #dddddd;
-        }
-        tr:nth-child(even) {background-color: #eeeeee}
-        tr:hover {background-color: rgba(112, 142, 173, 0.99)
-        }
-    </style>
+   <link rel="stylesheet" href="kalender.css">
     <meta charset="UTF-8">
     <title>Konsultationer</title>
 </head>
@@ -37,7 +10,9 @@
 <h1>Oversigt over konsultationer</h1>
 <div>
 <input type="week" id="week">
-<button>opret ny konsultaion</button>
+    <form action="nyKonsultation.html">
+        <input type="submit" value="opret ny konsultation">
+    </form>
 </div>
 <div style="overflow-x: auto;">
 <table id="kalender">
