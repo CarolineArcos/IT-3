@@ -1,18 +1,25 @@
-\documentclass{article}
+\documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{tocloft}
+\usepackage{filecontents}
+\usepackage{float}
+\usepackage{biblatex}
+\addbibresource{Semesterprojekt2.bib}
+\setcounter{secnumdepth}{4}
 
-\title{IT 3}
-\author{carospecht }
-\date{September 2021}
 
 \begin{document}
+\input{Forside/Forsidefil}
+%\maketitle
+\newpage
+\input{Abstract}
+\input{Indholdsfortegnelse}
+\input{Analyse}
+\input{Diskussion}
+\input{Konklusion}
 
-hej
-
-hej igen
-
-\maketitle
-
-\section{Introduction}
-
+\input{Referencer}
+\addcontentsline{toc}{section}{References}
 \end{document}
