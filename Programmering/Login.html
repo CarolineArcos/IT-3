@@ -6,32 +6,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
-        <h3>Login side</h3>
-        <form action="kalender.html" method="post">
-            <table>
-                <tr>
-                    <td>Brugernavn:</td>
-                        <td>
-                            <input type="text" name="Bruger">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Adgangskode:</td>
-                    <td>
-                        <input type="adgangskode" name="bruger_kode">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" name="Godkend"
-                        value="Godkend">
-                    </td>
-                </tr>
-            </table>
+<div class ="center">
+    <h1>login side</h1>
+    <form method="post">
+          <div class="txt_field">
+              <label>Brugernavn</label>
+              <input type="text" required>
+
+              </div>
+        <div class="txt_field">
+            <label>Kodeord</label>
+            <input type="Kodeord" required>
+
+        </div>
+        <!-- Her er funktionen der afgør hvad der sker når man trykker på "Godkend"-->
+        <button id="button" onclick="klikGodkend()">Godkend</button>
+        <script>
+            function klikGodkend(){
+                document.getElementById("button").innerHTML="Logger ind";
+            }
+        </script>
+    </form>
+</div>
 
 
-        </form>
-    </center>
 </body>
 </html>
