@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Velkommen til Region H EHR</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<script type = "text/javascript">
+    function getPatient(){
+        fetch("rest/patient")
+            .then(function (data){
+                data.text()
+                    .then(function(text){
+                            alert(text)
+                        }
+                    )
+            })
+    }
+    let xmlDoc = new DOMParser().parseFromString(text,"text/xml")
+    document.getElementById("patient").innerText=xmlDoc.getElementsByTagName("name").item(0).innerHTML +xmlDoc.getElementsByTagName("cprnr").item(0).innerHTML
+
+</script>
+<div id="patient"></div>
+<button onclick="getPatient();">Hent patient</button>
+
+<H1>Velkommen til DTU EHR</H1>
+<p>&#128512;</p>
+<p>&#128525;</p>
+<p>&#128151;</p>
+
+<form action="api" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username"  placeholder="enter your name" name="username"><br>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
+    <button type="submit" value="Login" id="submitbuttion">Submit</button><br>
+    <button type="reset" value="Nulstil" id="nulstilbutton">Nulstil</button>
+</form>
+
+
+</body>
+</html>
