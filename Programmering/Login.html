@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class ="center">
+    <h1>login side</h1>
+    <form method="post">
+          <div class="txt_field">
+              <label>Brugernavn</label>
+              <input type="text" required>
+
+              </div>
+        <div class="txt_field">
+            <label>Kodeord</label>
+            <input type="Kodeord" required>
+
+        </div>
+        <!-- Her er funktionen der afgør hvad der sker når man trykker på "Godkend"-->
+        <button id="button" onclick="klikGodkend()">Godkend</button>
+        <script>
+            function klikGodkend(){
+                document.getElementById("button").innerHTML="Logger ind";
+            }
+        </script>
+    </form>
+</div>
+
+
+</body>
+</html>
