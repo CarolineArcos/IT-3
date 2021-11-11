@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <packaging>war</packaging>
+
+    <groupId>org.example</groupId>
+    <artifactId>Lektion11</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+    </properties>
+<dependencies>
+    <dependency>
+        <groupId>org.glassfish.jersey.containers</groupId>
+        <artifactId>jersey-container-servlet</artifactId>
+        <version>2.25.1</version>
+    </dependency>
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs-api</artifactId>
+        <version>2.1.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.glassfish.jersey.media</groupId>
+        <artifactId>jersey-media-json-jackson</artifactId>
+        <version>2.25.1</version>
+    </dependency>
+    <!-- Old school xml bindings to shut up tomcat -->
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.3.1</version>
+    </dependency>
+    <!-- Same as Above -->
+    <dependency>
+        <groupId>javax.activation</groupId>
+        <artifactId>activation</artifactId>
+        <version>1.1</version>
+    </dependency>
+</dependencies>
+</project>
