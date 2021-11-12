@@ -17,12 +17,19 @@
             <label>Kodeord</label>
             <input type="password" required>
         </div>
+
+        <label for="Patient">
+            <input id="Patient" type="checkbox" name="brugertype" value="Patient" > Patient</label>
+
+        <label for="Sundhedspersonale">
+            <input id="Sundhedspersonale" type="checkbox" name="brugertype" value="Sundhedspersonale" > Sundhedspersonale</label>
+
         <div class="button">
         <!-- Her er funktionen der afgør hvad der sker når man trykker på "Godkend"-->
         <button id="button" onclick="klikGodkend()">Godkend</button>
         <script>
             function klikGodkend(){
-                document.getElementById("button").innerHTML="Logger ind";
+                document.getElementById("button").action="kalender.html";
             }
         </script>
         </div>
