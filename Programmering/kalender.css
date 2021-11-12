@@ -1,0 +1,26 @@
+body{
+    background-color: #99a2b0;
+}
+h1{
+    text-align: center;
+}
+div{
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 700px;
+    padding: 10px;
+}
+th {
+    background-color: #4e9bd0;
+    font-size: 20px;
+}
+table{
+
+    background-color: #dddddd;
+}
+tr:nth-child(even) {background-color: #eeeeee}
+tr:hover {background-color: rgba(112, 142, 173, 0.99)
+}
