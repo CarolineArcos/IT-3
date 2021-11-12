@@ -12,23 +12,24 @@
           <div class="txt_field">
               <label>Brugernavn</label>
               <input type="text" required>
-
-              </div>
-        <div class="txt_field">
+          </div>
+        <div class="password">
             <label>Kodeord</label>
-            <input type="Kodeord" required>
-
+            <input type="password" required>
         </div>
-        <!-- Her er funktionen der afgør hvad der sker når man trykker på "Godkend"-->
-        <button id="button" onclick="klikGodkend()">Godkend</button>
-        <script>
-            function klikGodkend(){
-                document.getElementById("button").innerHTML="Logger ind";
-            }
-        </script>
+
+        <label for="Patient">
+            <input id="Patient" type="checkbox" name="brugertype" value="Patient" > Patient</label>
+
+        <label for="Sundhedspersonale">
+            <input id="Sundhedspersonale" type="checkbox" name="brugertype" value="Sundhedspersonale" > Sundhedspersonale</label>
     </form>
+    <div class="button">
+        <!-- Her er funktionen der afgør hvad der sker når man trykker på "Godkend"-->
+        <form action="kalender.html">
+            <input type="submit" value="Godkend">
+        </form>
+    </div>
 </div>
-
-
 </body>
 </html>
