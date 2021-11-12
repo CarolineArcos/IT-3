@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Opret ny konsultation</title>
+    <link rel="stylesheet" href="nyKonsultation.css">
 </head>
-<body>
-<form action="kalender.html">
-    <label for="dato">Dato:</label>
-    <input type="date" id="dato"><br>
-    <label for="starttid">Fra kl: </label>
-    <input type="time" id="starttid">
-    <label for="sluttid"> Til kl: </label>
-    <input type="time" id="sluttid"> <br>
-    <label for="cpr"> Patient-CPR: </label>
-    <input type="number" id="cpr"> <br>
-    <label for="noter">Noter til konsultation:</label>
-    <input type="text" id="noter"><br>
-    <input type="submit" value="opret tid">
 
-</form>
+<body>
+<div class ="center">
+    <h1>Oprette konsultation</h1>
+    <form method="post">
+        <div class="txt_field">
+            <label for="dato">Dato:</label>
+            <input type="date" id="dato"><br>
+        </div>
+        <div class="txt_field">
+            <label for="starttid">Fra kl: </label>
+            <input type="time" id="starttid">
+        </div>
+        <div class="txt_field">
+            <label for="Sluttid"> Til kl: </label>
+            <input type="time" id="Sluttid"> <br>
+        </div>
+        <div class="txt_field">
+            <label for="cpr"> Patient-CPR: </label>
+            <input type="number" id="cpr"> <br>
+        </div>
+        <div class="txt_field">
+            <label for="noter">Noter til konsultation:</label>
+            <input type="text" id="noter"><br>
+        </div>
+        <div class="txt_field">
+            <input type="submit" value="Opret tid">
+        </div>
+    </form>
+</div>
 </body>
 </html>
