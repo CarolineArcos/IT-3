@@ -1,26 +1,26 @@
 body{
 
     background: linear-gradient(120deg, dodgerblue,#99a2b0);
-    align-items: center;
+    font-family: montserrat, serif;
 }
 
 h1{
     text-align: center;
 }
-div{
-position: center;
+form{
+    text-align: center;
+    margin: 10px;
 }
 table, th, td {
-
+    font-family: montserrat, serif;
     border: 1px solid black;
     border-collapse: collapse;
     width: 700px;
     padding: 2px;
-}
-table.center{
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
+
 th {
     background: rgba(255, 240, 245, 0.82);
     border-radius: 10px;
