@@ -4,11 +4,11 @@ body {
     font-family: montserrat, fantasy;
     background: linear-gradient(120deg, dodgerblue, #99a2b0);
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 .center{
     position: absolute;
-    top: 35%;
+    top: 10%;
     left: 35%;
     transform: translate(-30%-30%);
     width: 480px;
