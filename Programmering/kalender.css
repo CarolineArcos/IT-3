@@ -11,6 +11,11 @@ form{
     text-align: center;
     margin: 10px;
 }
+a{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 table, th, td {
     font-family: montserrat, serif;
     border: 1px solid black;
