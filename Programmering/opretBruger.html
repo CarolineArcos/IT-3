@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BrugerOprettelse Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class ="center">
+    <h1>Opret bruger</h1>
+    <form method="post">
+        <div class="txt_field">
+            <label>Brugernavn</label>
+            <input type="text" required>
+        </div>
+        <div class="password">
+            <label>Kodeord</label>
+            <input type="password" required>
+        </div>
+        <div class="checkbokse">
+            <label for="Patient">
+                <input id="Patient" type="checkbox" name="brugertype" value="Patient" > Patient</label>
+
+            <label for="Sundhedspersonale">
+                <input id="Sundhedspersonale" type="checkbox" name="brugertype" value="Sundhedspersonale" > Sundhedspersonale</label>
+        </div>
+    </form>
+    <div class="button">
+        <!-- Her er funktionen der afgør hvad der sker når man trykker på "Godkend"-->
+        <form action="kalender.html">
+            <input type="submit" value="Opret og log ind">
+        </form>
+    </div>
+</div>
+</body>

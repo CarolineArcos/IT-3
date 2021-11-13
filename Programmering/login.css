@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, serif;
+    background: -webkit-linear-gradient(120deg, cornflowerblue,lightskyblue);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(50%50%);
+    width: 380px;
+    background: whitesmoke;
+    border-radius: 10px;
+    justify-content: center;
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid darkblue;
+
+}
+.center form {
+    padding: 10px 30px;
+
+
+}
+.txt_field input {
+    width: 25%;
+    padding: 10px 30px;
+    height: 6px;
+    font-size: 15px;
+    background: whitesmoke;
+}
+.password input {
+    width: 25%;
+    padding: 10px 30px;
+    height: 6px;
+    font-size: 15px;
+    background: whitesmoke;
+}
+/*Følgende er i brug*/
+form .txt_field {
+    font-family: monospace;
+    position: relative;
+    border-bottom: none;
+}
+
+.txt_field label {
+    color: black;
+    font-size: 18px;
+}
+
+.txt_field input {
+    margin-right: 0px;
+    color: black;
+    font-size: 18px;
+}
+
+form .password {
+    font-family: monospace;
+    text-align: -moz-center;
+    position: relative;
+    border-bottom: none;
+    /*afstand mellem brugernavn og kodeord*/
+    margin: 15px 40px;
+}
+.password label {
+    position: relative;
+    top: 50%;
+    left: -5px;
+    color: black;
+    font-size: 18px;
+}
+
+.checkbokse label {
+    position: center;
+    top: 50%;
+    left: -5px;
+    color: black;
+    font-size: 15px;
+}
+
+.button form{
+    text-align: center;
+}
+
+.button form input[type="submit"] {
+    margin-right: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 1%;
+    background: -webkit-linear-gradient(120deg, cornflowerblue,lightskyblue);
+}
+
+.Opret-link{
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
