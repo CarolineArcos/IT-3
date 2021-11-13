@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 </head>
 <body>
+
 <div class ="center">
-    <h1>login side</h1>
+    <h1>login</h1>
     <form method="post">
           <div class="txt_field">
               <label>Brugernavn</label>
@@ -17,18 +19,14 @@
             <label>Kodeord</label>
             <input type="password" required>
         </div>
-
-        <label for="Patient">
-            <input id="Patient" type="checkbox" name="brugertype" value="Patient" > Patient</label>
-
-        <label for="Sundhedspersonale">
-            <input id="Sundhedspersonale" type="checkbox" name="brugertype" value="Sundhedspersonale" > Sundhedspersonale</label>
     </form>
     <div class="button">
-        <!-- Her er funktionen der afgør hvad der sker når man trykker på "Godkend"-->
+        <!-- Her er funktionen der afgør hvad der sker når man trykker på "Log ind"-->
         <form action="kalender.html">
-            <input type="submit" value="Godkend">
+            <input type="submit" value="Log ind">
         </form>
+    </div>
+    <div class="Opret-link"><a href="opretBruger.html">Opret bruger</a>
     </div>
 </div>
 </body>

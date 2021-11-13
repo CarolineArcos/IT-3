@@ -1,40 +1,48 @@
-body{
-
-    background: linear-gradient(120deg, dodgerblue,#99a2b0);
+body {
+    margin: 10px;
+    padding: 10px;
     font-family: montserrat, serif;
+    background: -webkit-linear-gradient(120deg, cornflowerblue,lightskyblue);
+    height: 100vh;
+    overflow: auto;
 }
-
 h1{
     text-align: center;
 }
-form{
+h2{
     text-align: center;
-    margin: 10px;
 }
 a{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-table, th, td {
-    font-family: montserrat, serif;
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 700px;
-    padding: 2px;
-    margin-right: auto;
-    margin-left: auto;
+.center{
+    text-align: center;
+    position: center;
+    width: 980px;
+    border-radius: 10px;
+    margin-left: 20%;
+
+}
+.Uge {
+    margin-left: -74%;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 800px;
+    padding: 2px;
+}
 th {
-    background: rgba(255, 240, 245, 0.82);
-    border-radius: 10px;
+    background-color: #4e9bd0;
     font-size: 20px;
 }
 table{
-    background: lavenderblush;
-    border-radius: 10px;
+    background-color: #dddddd;
+    margin-bottom: 40px;
 }
-tr:nth-child(even) {background: #FCC6D8FF}
-tr:hover {background-color: rgba(203, 214, 225, 0.99)
+tr:nth-child(even) {background-color: #eeeeee}
+tr:hover {background-color: rgba(112, 142, 173, 0.99)
 }
